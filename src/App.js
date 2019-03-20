@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
-import Form from './components/Form'
+import SMS from './components/SMS'
 
 class App extends Component {
   render(){
     return(
-      <div>
-        <Form></Form>
+      <div className="container">
+        <SMS></SMS>
       </div>
     )
   }
