@@ -11,7 +11,7 @@ class SMS extends Component {
         event.preventDefault()
         const data = new FormData(event.target)
 
-        fetch('http://localhost:5000/sms-sending', {
+        fetch('http://0.0.0.0:5000/sms-sending', { //Update  URL to live server
             method: 'POST',
             body: JSON.stringify({
                 message: data.get('message'),
